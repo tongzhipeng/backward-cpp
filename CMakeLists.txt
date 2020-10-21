@@ -31,6 +31,7 @@ include(GNUInstallDirs)
 
 include(BackwardConfig.cmake)
 
+add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
 # check if compiler is nvcc or nvcc_wrapper
 set(COMPILER_IS_NVCC false)
 get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
